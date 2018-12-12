@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileAppProject"
+             x:Class="MobileAppProject.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Shoe Shop"
+               FontFamily="Bold"
+               FontSize="Large"
+               TextColor="Blue"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand" />
+
+        <Button Text="Shop"
+                Clicked="Shop_Click"
+                BackgroundColor="Gray"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                BorderRadius="10"
+                WidthRequest="200"
+                HeightRequest="70"/>
+
+        <Button Text="Login"
+                Clicked="Login_Click"
+                BackgroundColor="Gray"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                BorderRadius="10"
+                WidthRequest="200"
+                HeightRequest="70"/>
+
+        <Button Text="About Us"
+                Clicked="AboutUs_Click"
+                BackgroundColor="Gray"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                BorderRadius="10"
+                WidthRequest="200"
+                HeightRequest="70"/>
+
+    </StackLayout>
+
+</ContentPage>
