@@ -11,10 +11,13 @@
                        FontFamily="Bold"
                        HorizontalOptions="Center"
                        VerticalOptions="StartAndExpand" />
-                <Image Source="shoe.png"/>
+                <Image Source="shop/shoe.png"/>
                 <Label Text="Famous Footwear is your place for athletic and casual shoes for the whole family from hundreds of name brands. You'll find styles for women, men and kids from brands like Nike, Converse, Vans, Sperry, Madden Girl, Skechers, ASICS and more! With stores in the U.S. and Canada and even more selection online at Famous.com and FamousFootwear.ca, Famous Footwear is a leading family footwear destination for the famous brands you know and love. Famous Footwear is part of Caleres Inc., a diverse portfolio of global footwear brands. Combined, these brands help make Caleres a company with both a legacy and a mission. Caleres' legacy includes more than 130-years of craftsmanship, a passion for fit and a business savvy, with a mission to continue to inspire people to feel good…feet first."
                 />
-                
+                <Entry Placeholder="Comments..."/>
+                <Button Clicked="Contact_Click"
+                        Text="Contact"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

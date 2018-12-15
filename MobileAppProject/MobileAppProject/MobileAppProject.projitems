@@ -51,6 +51,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)shoe.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\converse.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\puma.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\addidas.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\nike.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\reebok.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\shoe.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\timberland.png" />
   </ItemGroup>
 </Project>

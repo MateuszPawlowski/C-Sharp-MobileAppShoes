@@ -9,12 +9,15 @@ using Xamarin.Forms.Xaml;
 
 namespace MobileAppProject
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Shop : ContentPage
-	{
-		public Shop ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Shop : ContentPage
+    {
+        public Shop()
+        {
+            InitializeComponent();
+        }
+
+        
+
+    }
 }

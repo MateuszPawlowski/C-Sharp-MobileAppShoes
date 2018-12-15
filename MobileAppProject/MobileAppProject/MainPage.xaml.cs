@@ -12,7 +12,6 @@ namespace MobileAppProject
         public MainPage()
         {
             InitializeComponent();
-     
         }
 
         private async void AboutUs_Click(object sender, EventArgs e)

@@ -3,10 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileAppProject.Shop">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Label Text="Brands" FontSize="Large" 
+                           FontFamily="Bold" 
+                           HorizontalOptions="StartAndExpand"
+                           TextColor="MediumSeaGreen"/>
+
+                    <Image Source="shop/addidas.png" HeightRequest="150" />
+                    <Button Text="Shop Adidas" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
+                   
+                    <Image Source="shop/puma.png" HeightRequest="150" />
+                    <Button Text="Shop puma" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
+                    
+                    <Image Source="shop/converse.png" HeightRequest="150" />
+                    <Button Text="Shop Converse" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
+
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Label Text=" " FontSize="Large" FontFamily="Bold"/>
+
+                    <Image Source="shop/nike.png" HeightRequest="150" />
+                    <Button Text="Shop Nike" WidthRequest="220" HorizontalOptions="End"/>
+                    
+                    <Image Source="shop/timberland.png" HeightRequest="150" />
+                    <Button Text="Shop Timberlands" WidthRequest="220" HorizontalOptions="End"/>
+                   
+                    <Image Source="shop/reebok.png" HeightRequest="150" />
+                    <Button Text="Shop Reeboks" WidthRequest="220" HorizontalOptions="End"/>
+                </StackLayout>
+            </StackLayout>
+            
+            
+
+        </ScrollView>
+       
     </ContentPage.Content>
 </ContentPage>
