@@ -10,28 +10,38 @@
                     <Label Text="Brands" FontSize="Large" 
                            FontFamily="Bold" 
                            HorizontalOptions="StartAndExpand"
-                           TextColor="PaleGoldenrod"/>
+                           TextColor="DarkGoldenrod"/>
 
-                    <Image Source="shop/addidas.png" HeightRequest="150" />
+                    <Image Source="Brands/addidas.png" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Adidas_Tap"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Button Text="Shop Adidas" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
-                   
-                    <Image Source="shop/puma.png" HeightRequest="150" />
+
+                    <Image Source="Brands/puma.png" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Puma_Tap"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Button Text="Shop puma" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
-                    
-                    <Image Source="shop/converse.png" HeightRequest="150" />
+
+                    <Image Source="Brands/converse.png" HeightRequest="150" />
                     <Button Text="Shop Converse" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
 
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
                     <Label Text=" " FontSize="Large" FontFamily="Bold"/>
 
-                    <Image Source="shop/nike.png" HeightRequest="150" />
+                    <Image Source="Brands/nike.png" HeightRequest="150" />
                     <Button Text="Shop Nike" WidthRequest="220" HorizontalOptions="End"/>
-                    
-                    <Image Source="shop/timberland.png" HeightRequest="150" />
+
+                    <Image Source="Brands/timberland.png" HeightRequest="150" />
                     <Button Text="Shop Timberlands" WidthRequest="220" HorizontalOptions="End"/>
-                   
-                    <Image Source="shop/reebok.png" HeightRequest="150" />
+
+                    <Image Source="Brands/reebok.png" HeightRequest="150" />
                     <Button Text="Shop Reeboks" WidthRequest="220" HorizontalOptions="End"/>
                 </StackLayout>
             </StackLayout>

@@ -17,7 +17,16 @@ namespace MobileAppProject
             InitializeComponent();
         }
 
-        
+        private async void Adidas_Tap(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Adidas());
+        }
 
+        private async void Puma_Tap(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Puma());
+        }
+
+ 
     }
 }

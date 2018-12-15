@@ -32,10 +32,19 @@
 
                 </Grid.RowDefinitions>
                 <Entry Grid.Row="1" Placeholder="Email or Phone Number" PlaceholderColor="#bababa" FontSize="16"/>
-                <Entry Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
+                <Entry Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16" IsPassword="True"/>
                 <Button Text="LogIn" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
-                <Label Text="LoginTrouble?GetHelp" HorizontalOptions="Center" Grid.Row="4" Margin="0,10,0,0" FontSize="12"/>
-
+                <Label Text="LoginTrouble?GetHelp" 
+                       HorizontalOptions="Center" 
+                       Grid.Row="4" Margin="0,10,0,0" 
+                       FontSize="12">
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                                Tapped="Trouble_Tap"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                
                 <Grid Grid.Row="5">
 
                     <Grid.ColumnDefinitions>
@@ -51,7 +60,11 @@
                     <!--<Label Text="" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>-->
 
 
-                    <Label BackgroundColor="#bababa" Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <Label BackgroundColor="#bababa" 
+                           Grid.Column="2" 
+                           HeightRequest="1" 
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Center"/>
 
 
 
@@ -60,7 +73,13 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Row="6">
 
 
-                    <Label Text="LoginWithFacebook" TextColor="#485992"  />
+                    <Label Text="LoginWithFacebook" 
+                           TextColor="#485992">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Facebook_Tap"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
 
                 </StackLayout>
@@ -70,7 +89,6 @@
             <StackLayout Grid.Row="2" BackgroundColor="#ffffff">
 
                 <Label HeightRequest="1" BackgroundColor="#e3e3e3"/>
-                <Label Text="Dont'Have Account Login? SignUp" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
 
             </StackLayout>

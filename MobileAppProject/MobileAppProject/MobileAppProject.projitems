@@ -10,15 +10,26 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AboutUs.xaml.cs">
       <DependentUpon>AboutUs.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Puma.xaml.cs">
+      <DependentUpon>Puma.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Adidas.xaml.cs">
+      <DependentUpon>Adidas.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ContactUs.xaml.cs">
+      <DependentUpon>ContactUs.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -26,6 +37,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Shop.xaml.cs">
       <DependentUpon>Shop.xaml</DependentUpon>
@@ -51,12 +63,39 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Shop\converse.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Shop\puma.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Shop\addidas.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Shop\nike.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Shop\reebok.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Shop\shoe.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Shop\timberland.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\converse.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\puma.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\addidas.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\nike.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\reebok.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\shoe.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Brands\timberland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Adidas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ContactUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Puma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Shop\ShopPics\" />
   </ItemGroup>
 </Project>

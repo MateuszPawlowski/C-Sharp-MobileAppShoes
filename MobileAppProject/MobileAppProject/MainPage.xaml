@@ -1,45 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MobileAppProject"
              x:Class="MobileAppProject.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Shoe Shop"
-               FontFamily="Bold"
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Text="Shoe Shop"
+               FontAttributes="Bold"
                FontSize="Large"
                TextColor="Blue"
                HorizontalOptions="Center"
                VerticalOptions="StartAndExpand" />
 
-        <Button Text="Shop"
-                Clicked="Shop_Click"
-                BackgroundColor="Gray"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                BorderRadius="10"
-                WidthRequest="200"
-                HeightRequest="70"/>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button Text="Shop"
+                            Clicked="Shop_Click"
+                            BackgroundColor="Gray" 
+                            TextColor="Navy"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="70"/>
 
-        <Button Text="Login"
-                Clicked="Login_Click"
-                BackgroundColor="Gray"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                BorderRadius="10"
-                WidthRequest="200"
-                HeightRequest="70"/>
+                    <Button Text="About Us"
+                            Clicked="AboutUs_Click"
+                            BackgroundColor="DarkGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="70"/>
+                </StackLayout>
 
-        <Button Text="About Us"
-                Clicked="AboutUs_Click"
-                BackgroundColor="Gray"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                BorderRadius="10"
-                WidthRequest="200"
-                HeightRequest="70"/>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                   
+                    <Button Text="Login"
+                            Clicked="Login_Click"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="70"/>
 
-    </StackLayout>
+                    <Button Text="Contact Us"
+                            Clicked="Contact_Click"
+                            BackgroundColor="LightGray"
+                            TextColor="Yellow"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="70"/>
+                </StackLayout>
 
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
 </ContentPage>
