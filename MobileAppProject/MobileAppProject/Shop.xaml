@@ -10,7 +10,7 @@
                     <Label Text="Brands" FontSize="Large" 
                            FontFamily="Bold" 
                            HorizontalOptions="StartAndExpand"
-                           TextColor="MediumSeaGreen"/>
+                           TextColor="PaleGoldenrod"/>
 
                     <Image Source="shop/addidas.png" HeightRequest="150" />
                     <Button Text="Shop Adidas" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
