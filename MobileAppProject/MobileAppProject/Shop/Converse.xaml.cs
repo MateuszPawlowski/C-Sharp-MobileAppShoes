@@ -16,10 +16,9 @@ namespace MobileAppProject
 		{
 			InitializeComponent ();
 
-        
-            
-
 
         }
+      
+        
 	}
 }

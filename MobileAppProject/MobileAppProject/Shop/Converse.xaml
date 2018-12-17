@@ -5,7 +5,7 @@
     <ContentPage.Content>
         
         <StackLayout>
-        
+            <Label Text="Hello"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

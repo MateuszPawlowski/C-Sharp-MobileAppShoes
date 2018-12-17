@@ -3,47 +3,138 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileAppProject.Adidas">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+            <StackLayout>
             <!-- Place new controls here -->
             <Label Text="----Adidas----"
                FontAttributes="Bold"
                FontSize="Large"
-               TextColor="LightPink"
+               BackgroundColor="LightPink"
                HorizontalOptions="Center"
-               VerticalOptions="StartAndExpand" />
+               VerticalOptions="Start" />
+
 
             <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                    <Image Source="Brands/addidas.png" HeightRequest="150"/>
+                        <Label Text="Stan Smith" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/stansmith.png" HeightRequest="150"/>
+                        
 
                 </StackLayout>
 
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+ 
+                    <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                        <Picker.Items>
+                            <x:String>7</x:String>
+                            <x:String>7.5</x:String>
+                            <x:String>8</x:String>
+                            <x:String>8.5</x:String>
+                            <x:String>9</x:String>
+                        </Picker.Items>
 
-                    <Button Text="Login"
 
+                    </Picker>
+
+                    <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
+                    <Button Text="Add to cart"
+                            Clicked="AddedCart"
                             BackgroundColor="DimGray"
                             TextColor="Navy"
-                            HorizontalOptions="Center"
+                            HorizontalOptions="Start"
                             VerticalOptions="End"
                             BorderRadius="10"
-                            WidthRequest="200"
-                            HeightRequest="70"/>
+                            WidthRequest="150"
+                            HeightRequest="40"/>
 
-                    <Button Text="Contact Us"
-   
-                            BackgroundColor="LightGray"
-                            TextColor="Yellow"
-                            HorizontalOptions="Center"
-                            VerticalOptions="End"
-                            BorderRadius="10"
-                            WidthRequest="200"
-                            HeightRequest="70"/>
+                    
+
                 </StackLayout>
 
             </StackLayout>
 
-        </StackLayout>
+             <Label Text="&#x0a;"/>
 
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Image Source="Shop/ShopPics/stansmith.png" HeightRequest="150"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                            <Picker.Items>
+                                <x:String>7</x:String>
+                                <x:String>7.5</x:String>
+                                <x:String>8</x:String>
+                                <x:String>8.5</x:String>
+                                <x:String>9</x:String>
+                            </Picker.Items>
+
+
+                        </Picker>
+
+                        <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
+                        <Button Text="Add to cart"
+                            Clicked="AddedCart"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="150"
+                            HeightRequest="40"/>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Label Text="&#x0a;"/>
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Image Source="Shop/ShopPics/stansmith.png" HeightRequest="150"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                            <Picker.Items>
+                                <x:String>7</x:String>
+                                <x:String>7.5</x:String>
+                                <x:String>8</x:String>
+                                <x:String>8.5</x:String>
+                                <x:String>9</x:String>
+                            </Picker.Items>
+
+
+                        </Picker>
+
+                        <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
+                        <Button Text="Add to cart"
+                            Clicked="AddedCart"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="150"
+                            HeightRequest="40"/>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Label Text="&#x0a;"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
