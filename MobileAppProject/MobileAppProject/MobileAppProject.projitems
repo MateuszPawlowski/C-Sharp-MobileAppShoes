@@ -16,6 +16,18 @@
       <DependentUpon>AboutUs.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Reebok.xaml.cs">
+      <DependentUpon>Reebok.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Converse.xaml.cs">
+      <DependentUpon>Converse.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Nike.xaml.cs">
+      <DependentUpon>Nike.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Shop\Puma.xaml.cs">
       <DependentUpon>Puma.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -43,6 +55,10 @@
       <DependentUpon>Shop.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Timberland.xaml.cs">
+      <DependentUpon>Timberland.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Login.xaml">
@@ -68,8 +84,9 @@
     <Content Include="$(MSBuildThisFileDirectory)Brands\addidas.png" />
     <Content Include="$(MSBuildThisFileDirectory)Brands\nike.png" />
     <Content Include="$(MSBuildThisFileDirectory)Brands\reebok.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Brands\shoe.png" />
     <Content Include="$(MSBuildThisFileDirectory)Brands\timberland.png" />
+    <Content Include="$(MSBuildThisFileDirectory)OtherPics\facebook.png" />
+    <Content Include="$(MSBuildThisFileDirectory)OtherPics\shoe.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Adidas.xaml">
@@ -97,5 +114,29 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Shop\ShopPics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Nike.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Converse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Timberland.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Reebok.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

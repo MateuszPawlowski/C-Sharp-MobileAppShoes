@@ -72,7 +72,6 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Row="6">
 
-
                     <Label Text="LoginWithFacebook" 
                            TextColor="#485992">
                         <Label.GestureRecognizers>

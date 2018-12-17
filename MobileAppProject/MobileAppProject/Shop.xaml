@@ -18,7 +18,7 @@
                                 Tapped="Adidas_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Adidas" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
+                    <Button Text="Shop Adidas" Clicked="Adidas_Click" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
 
                     <Image Source="Brands/puma.png" HeightRequest="150">
                         <Image.GestureRecognizers>
@@ -26,23 +26,43 @@
                                 Tapped="Puma_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop puma" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
+                    <Button Text="Shop puma" Clicked="Puma_Click" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
 
-                    <Image Source="Brands/converse.png" HeightRequest="150" />
-                    <Button Text="Shop Converse" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
+                    <Image Source="Brands/converse.png" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Converse_Tap"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Shop Converse" Clicked="Converse_Click" WidthRequest="220" HorizontalOptions="StartAndExpand"/>
 
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
                     <Label Text=" " FontSize="Large" FontFamily="Bold"/>
 
-                    <Image Source="Brands/nike.png" HeightRequest="150" />
-                    <Button Text="Shop Nike" WidthRequest="220" HorizontalOptions="End"/>
+                    <Image Source="Brands/nike.png" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Nike_Tap"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Shop Nike" Clicked="Nike_Click" WidthRequest="220" HorizontalOptions="End"/>
 
-                    <Image Source="Brands/timberland.png" HeightRequest="150" />
-                    <Button Text="Shop Timberlands" WidthRequest="220" HorizontalOptions="End"/>
+                    <Image Source="Brands/timberland.png" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Timberland_Tap"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Shop Timberlands" Clicked="Timberland_Click" WidthRequest="220" HorizontalOptions="End"/>
 
-                    <Image Source="Brands/reebok.png" HeightRequest="150" />
-                    <Button Text="Shop Reeboks" WidthRequest="220" HorizontalOptions="End"/>
+                    <Image Source="Brands/reebok.png" HeightRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Reebok_Tap"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Shop Reeboks" Clicked="Reebok_Click" WidthRequest="220" HorizontalOptions="End"/>
                 </StackLayout>
             </StackLayout>
             

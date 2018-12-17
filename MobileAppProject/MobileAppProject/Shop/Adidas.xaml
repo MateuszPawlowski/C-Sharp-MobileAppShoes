@@ -4,9 +4,46 @@
              x:Class="MobileAppProject.Adidas">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Adidas!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <!-- Place new controls here -->
+            <Label Text="----Adidas----"
+               FontAttributes="Bold"
+               FontSize="Large"
+               TextColor="LightPink"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand" />
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Image Source="Brands/addidas.png" HeightRequest="150"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                    <Button Text="Login"
+
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="70"/>
+
+                    <Button Text="Contact Us"
+   
+                            BackgroundColor="LightGray"
+                            TextColor="Yellow"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="70"/>
+                </StackLayout>
+
+            </StackLayout>
+
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
