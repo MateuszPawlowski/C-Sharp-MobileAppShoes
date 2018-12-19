@@ -6,6 +6,9 @@
         
         <StackLayout>
             <Label Text="Hello"/>
+            <Button Text="Hello" HorizontalOptions="Center"/>
+            <Button Text="Hello" HorizontalOptions="Center"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -133,7 +133,7 @@
                 </StackLayout>
 
                 <Label Text="&#x0a;"/>
-
+                <Button Text="Buy" Clicked="Bought" HorizontalOptions="Center" WidthRequest="150"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

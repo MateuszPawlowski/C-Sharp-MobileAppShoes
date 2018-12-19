@@ -85,8 +85,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Brands\nike.png" />
     <Content Include="$(MSBuildThisFileDirectory)Brands\reebok.png" />
     <Content Include="$(MSBuildThisFileDirectory)Brands\timberland.png" />
-    <Content Include="$(MSBuildThisFileDirectory)OtherPics\facebook.png" />
-    <Content Include="$(MSBuildThisFileDirectory)OtherPics\shoe.png" />
+    <Content Include="$(MSBuildThisFileDirectory)OtherPics\aboutUs.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\stansmith.png" />
   </ItemGroup>
   <ItemGroup>
