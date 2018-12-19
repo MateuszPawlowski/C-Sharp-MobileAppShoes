@@ -14,56 +14,16 @@
                VerticalOptions="Start" />
 
 
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
-                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Stan Smith" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/stansmith.png" HeightRequest="150"/>
-                        
-
-                </StackLayout>
-
-                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
- 
-                    <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
-                        <Picker.Items>
-                            <x:String>7</x:String>
-                            <x:String>7.5</x:String>
-                            <x:String>8</x:String>
-                            <x:String>8.5</x:String>
-                            <x:String>9</x:String>
-                        </Picker.Items>
-
-
-                    </Picker>
-
-                    <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
-                    <Button Text="Add to cart"
-                            Clicked="AddedCart"
-                            BackgroundColor="DimGray"
-                            TextColor="Navy"
-                            HorizontalOptions="Start"
-                            VerticalOptions="End"
-                            BorderRadius="10"
-                            WidthRequest="150"
-                            HeightRequest="40"/>
-
-                    
-
-                </StackLayout>
-
-            </StackLayout>
-
-             <Label Text="&#x0a;"/>
-
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Image Source="Shop/ShopPics/stansmith.png" HeightRequest="150"/>
+                        <Label Text="Adidas Gazelle" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/gazelle.jpg" HeightRequest="150"/>
 
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-
+                        <Label Text="&#x0a;"/>
                         <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
                             <Picker.Items>
                                 <x:String>7</x:String>
@@ -76,7 +36,48 @@
 
                         </Picker>
 
-                        <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
+                        <Label Text="Cost: $180" FontSize="30" FontAttributes="Bold"/>
+                        <Button Text="Add to cart"
+                            Clicked="AddedCart"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="150"
+                            HeightRequest="40"/>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Label Text="&#x0a;"/>
+
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="Adidas NMD R1" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/nmd.jpg" HeightRequest="150"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="&#x0a;"/>
+                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                            <Picker.Items>
+                                <x:String>7</x:String>
+                                <x:String>7.5</x:String>
+                                <x:String>8</x:String>
+                                <x:String>8.5</x:String>
+                                <x:String>9</x:String>
+                            </Picker.Items>
+
+
+                        </Picker>
+
+                        <Label Text="Cost: $180" FontSize="30" FontAttributes="Bold"/>
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             BackgroundColor="DimGray"
@@ -96,13 +97,14 @@
                 <Label Text="&#x0a;"/>
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Image Source="Shop/ShopPics/stansmith.png" HeightRequest="150"/>
+                        <Label Text="Adidas Yeezy 350" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/yeezy.jpg" HeightRequest="150"/>
 
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-
+                        <Label Text="&#x0a;"/>
                         <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
                             <Picker.Items>
                                 <x:String>7</x:String>
@@ -115,7 +117,7 @@
 
                         </Picker>
 
-                        <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
+                        <Label Text="Cost: $220" FontSize="30" FontAttributes="Bold"/>
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             BackgroundColor="DimGray"

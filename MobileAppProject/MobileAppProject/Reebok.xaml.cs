@@ -16,5 +16,15 @@ namespace MobileAppProject
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void AddedCart(object sender, EventArgs e)
+        {
+            await DisplayAlert("Added To Cart", "Your Cart has been updated", "Ok");
+        }
+
+        async void Bought(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Payment());
+        }
+    }
 }

@@ -18,23 +18,21 @@ namespace MobileAppProject
 			InitializeComponent ();
 		}
 
-        float counter;
-
-
         private async void AddedCart(object sender, EventArgs e)
         {
-            counter++;
             await DisplayAlert("Added To Cart", "Your Cart has been updated", "Ok");
         }
 
         async void Bought(object sender, EventArgs e)
         {
-            var answer = await DisplayAlert("Are you sure?", "Are you sure you want to buy this product?", "Yes", "No");
+            await Navigation.PushAsync(new Payment());
+
+          /*  var answer = await DisplayAlert("Make Sure!", "Are you sure you want to buy all ?", "Yes", "No");
             Debug.WriteLine("Answer: " + answer);
             if(answer == true)
             {
-                await Navigation.PushAsync(new MainPage());
-            }
+                await Navigation.PushAsync(new Payment());
+            }*/
            
         }
 

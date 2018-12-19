@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAppProject.Nike">
+             x:Class="MobileAppProject.Timberland">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -16,8 +16,8 @@
 
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Nike Airmax 97" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/nike97.jpg" HeightRequest="150"/>
+                        <Label Text="TL 6-inch" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/sixinch.jpg" HeightRequest="150"/>
 
 
                     </StackLayout>
@@ -36,7 +36,7 @@
 
                         </Picker>
 
-                        <Label Text="Cost: $200" FontSize="30" FontAttributes="Bold"/>
+                        <Label Text="Cost: $190" FontSize="30" FontAttributes="Bold"/>
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             BackgroundColor="DimGray"
@@ -57,8 +57,8 @@
 
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Nike Jordan 1" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/jordan1.jpg" HeightRequest="150"/>
+                        <Label Text="TL Nellie" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/nellie.jpg" HeightRequest="150"/>
 
 
                     </StackLayout>
@@ -77,7 +77,7 @@
 
                         </Picker>
 
-                        <Label Text="Cost: $120" FontSize="30" FontAttributes="Bold"/>
+                        <Label Text="Cost: $130" FontSize="30" FontAttributes="Bold"/>
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             BackgroundColor="DimGray"
@@ -97,8 +97,8 @@
                 <Label Text="&#x0a;"/>
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Nike Airforce 1" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/airforce.jpg" HeightRequest="150"/>
+                        <Label Text="TL Earthkeeper" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/earthkeeper.jpg" HeightRequest="150"/>
 
 
                     </StackLayout>
@@ -117,7 +117,7 @@
 
                         </Picker>
 
-                        <Label Text="Cost: $100" FontSize="30" FontAttributes="Bold"/>
+                        <Label Text="Cost: $190" FontSize="30" FontAttributes="Bold"/>
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             BackgroundColor="DimGray"

@@ -3,12 +3,140 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileAppProject.Converse">
     <ContentPage.Content>
-        
-        <StackLayout>
-            <Label Text="Hello"/>
-            <Button Text="Hello" HorizontalOptions="Center"/>
-            <Button Text="Hello" HorizontalOptions="Center"/>
+        <ScrollView>
+            <StackLayout>
+                <!-- Place new controls here -->
+                <Label Text="----Adidas----"
+               FontAttributes="Bold"
+               FontSize="Large"
+               BackgroundColor="LightPink"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
 
-        </StackLayout>
+
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="Converse Chuck" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/converseshoe.jpg" HeightRequest="150"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="&#x0a;"/>
+                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                            <Picker.Items>
+                                <x:String>7</x:String>
+                                <x:String>7.5</x:String>
+                                <x:String>8</x:String>
+                                <x:String>8.5</x:String>
+                                <x:String>9</x:String>
+                            </Picker.Items>
+
+
+                        </Picker>
+
+                        <Label Text="Cost: $50" FontSize="30" FontAttributes="Bold"/>
+                        <Button Text="Add to cart"
+                            Clicked="AddedCart"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="150"
+                            HeightRequest="40"/>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Label Text="&#x0a;"/>
+
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="Converse Heart" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/heartcon.jpg" HeightRequest="150"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="&#x0a;"/>
+                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                            <Picker.Items>
+                                <x:String>7</x:String>
+                                <x:String>7.5</x:String>
+                                <x:String>8</x:String>
+                                <x:String>8.5</x:String>
+                                <x:String>9</x:String>
+                            </Picker.Items>
+
+
+                        </Picker>
+
+                        <Label Text="Cost: $160" FontSize="30" FontAttributes="Bold"/>
+                        <Button Text="Add to cart"
+                            Clicked="AddedCart"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="150"
+                            HeightRequest="40"/>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Label Text="&#x0a;"/>
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="Con x Off-White" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                        <Image Source="Shop/ShopPics/offwhiteCon.jpg" HeightRequest="150"/>
+
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="&#x0a;"/>
+                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+                            <Picker.Items>
+                                <x:String>7</x:String>
+                                <x:String>7.5</x:String>
+                                <x:String>8</x:String>
+                                <x:String>8.5</x:String>
+                                <x:String>9</x:String>
+                            </Picker.Items>
+
+
+                        </Picker>
+
+                        <Label Text="Cost: $300" FontSize="30" FontAttributes="Bold"/>
+                        <Button Text="Add to cart"
+                            Clicked="AddedCart"
+                            BackgroundColor="DimGray"
+                            TextColor="Navy"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            BorderRadius="10"
+                            WidthRequest="150"
+                            HeightRequest="40"/>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Label Text="&#x0a;"/>
+                <Button Text="Buy" Clicked="Bought" HorizontalOptions="Center" WidthRequest="150"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MobileAppProject
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Timberland : ContentPage
+	public partial class Payment : ContentPage
 	{
-		public Timberland ()
+		public Payment ()
 		{
 			InitializeComponent ();
 		}
