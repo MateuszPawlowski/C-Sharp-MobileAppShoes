@@ -17,7 +17,10 @@ namespace MobileAppProject
 			InitializeComponent ();
         }
 
-        
+        private async void HomePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
 
     }
 }

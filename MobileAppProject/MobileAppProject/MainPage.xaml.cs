@@ -36,5 +36,6 @@ namespace MobileAppProject
         {
             await Navigation.PushAsync(new ContactUs());
         }
+
     }
 }

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAppProject.Login">
+             x:Class="MobileAppProject.Login"
+             BackgroundColor="White">
     <ContentPage.Content>
         <Grid BackgroundColor="White">
 
@@ -12,8 +13,8 @@
             </Grid.RowDefinitions>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
 
-
                 <Label Text="Login Page"
+                       TextColor="Black"
                        FontSize="Medium"/>
 
             </StackLayout>
@@ -31,20 +32,34 @@
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
-                <Entry Grid.Row="1" Placeholder="Email or Phone Number" PlaceholderColor="#bababa" FontSize="16"/>
-                <Entry Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16" IsPassword="True"/>
-                <Button Text="LogIn" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
+                <Entry Grid.Row="1" 
+                       Placeholder="Email or Phone Number" 
+                       PlaceholderColor="#bababa" 
+                       FontSize="16"/>
+
+                <Entry Grid.Row="2" 
+                       Placeholder="Password" 
+                       PlaceholderColor="#bababa" 
+                       FontSize="16" 
+                       IsPassword="True"/>
+
+                <Button Text="LogIn"  
+                        TextColor="Black" 
+                        HeightRequest="50" 
+                        VerticalOptions="Start" 
+                        Grid.Row="3"/>
+
                 <Label Text="LoginTrouble?GetHelp" 
                        HorizontalOptions="Center" 
                        Grid.Row="4" Margin="0,10,0,0" 
                        FontSize="12">
-                    
+
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer
                                 Tapped="Trouble_Tap"/>
                     </Label.GestureRecognizers>
                 </Label>
-                
+
                 <Grid Grid.Row="5">
 
                     <Grid.ColumnDefinitions>
@@ -56,9 +71,10 @@
 
 
                     </Grid.ColumnDefinitions>
-                    <Label BackgroundColor="#bababa" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                    <!--<Label Text="" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>-->
-
+                    <Label BackgroundColor="#bababa" 
+                           HeightRequest="1" 
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Center"/>
 
                     <Label BackgroundColor="#bababa" 
                            Grid.Column="2" 
@@ -66,14 +82,12 @@
                            HorizontalOptions="FillAndExpand" 
                            VerticalOptions="Center"/>
 
-
-
                 </Grid>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Row="6">
 
                     <Label Text="LoginWithFacebook" 
-                           TextColor="#485992">
+                           TextColor="Black">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer
                                 Tapped="Facebook_Tap"/>
@@ -87,16 +101,20 @@
 
             <StackLayout Grid.Row="2" BackgroundColor="#ffffff">
 
-                <Label HeightRequest="1" BackgroundColor="#e3e3e3"/>
+                <Label HeightRequest="1" BackgroundColor="LightGray"/>
 
-
+                <!-- Go back home -->
+                <Button Clicked="HomePage"
+                    Text="Home"
+                    WidthRequest="70"
+                    BorderRadius="10"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"/>
             </StackLayout>
 
-
+            
 
         </Grid>
-
-
 
     </ContentPage.Content>
 </ContentPage>

@@ -36,6 +36,11 @@ namespace MobileAppProject
            
         }
 
+        private async void BackPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Shop());
+        }
+
 
     }
 }

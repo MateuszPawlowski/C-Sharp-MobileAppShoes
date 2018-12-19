@@ -16,7 +16,7 @@
       <DependentUpon>AboutUs.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Reebok.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Reebok.xaml.cs">
       <DependentUpon>Reebok.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -59,7 +59,7 @@
       <DependentUpon>Shop.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Timberland.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Shop\Timberland.xaml.cs">
       <DependentUpon>Timberland.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -90,6 +90,8 @@
     <Content Include="$(MSBuildThisFileDirectory)Brands\reebok.png" />
     <Content Include="$(MSBuildThisFileDirectory)Brands\timberland.png" />
     <Content Include="$(MSBuildThisFileDirectory)OtherPics\aboutUs.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)OtherPics\contact.png" />
+    <Content Include="$(MSBuildThisFileDirectory)OtherPics\logo.png" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\airforce.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\calder.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\converseshoe.jpg" />
@@ -107,6 +109,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\reebokazterk.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\reebokclassic.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\reebokfreestyle.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\sixinch.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\yeezy.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -152,13 +155,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Timberland.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Timberland.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Reebok.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shop\Reebok.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

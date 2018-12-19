@@ -28,5 +28,10 @@ namespace MobileAppProject
             await DisplayAlert("Login Successful !", "You have logged in.", "Ok");
             await Navigation.PushAsync(new MainPage());
         }
+
+        private async void HomePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

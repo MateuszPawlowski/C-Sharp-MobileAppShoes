@@ -1,13 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAppProject.ContactUs">
+             x:Class="MobileAppProject.ContactUs"
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
-            <Label  Text="Contact Us!"
+            <Label  Text="----Contact Us!----"
+                    TextColor="Black"
+                    BackgroundColor="LightGray"
                     FontSize="Large"
                     FontAttributes="Bold"
-                    TextColor="AliceBlue"/>
+                    HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="OtherPics/contact.png" 
+                   HeightRequest="200" 
+                   HorizontalOptions="CenterAndExpand"/>
 
             <Entry  Placeholder="Name"/>
             <Entry  Placeholder="E-mail"/>
@@ -15,7 +22,20 @@
                     IsSpellCheckEnabled="True"
                     IsTextPredictionEnabled="True"/>
             <Button Clicked="Contact_Click"
-                    Text="Contact"/>
+                    Text="Contact"
+                    BorderRadius="10"
+                    VerticalOptions="StartAndExpand"/>
+
+            <Label HeightRequest="1" BackgroundColor="LightGray"/>
+            
+            <!-- Go back home -->
+            <Button Clicked="HomePage"
+                    Text="Home"
+                    WidthRequest="70"
+                    BorderRadius="10"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

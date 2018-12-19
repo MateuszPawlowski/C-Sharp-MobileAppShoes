@@ -23,5 +23,10 @@ namespace MobileAppProject
                 "Our team will comeback as soon as possible to you", "Ok");
             await Navigation.PushAsync(new MainPage());
         }
+
+        private async void HomePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

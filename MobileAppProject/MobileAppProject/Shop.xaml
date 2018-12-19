@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAppProject.Shop">
+             x:Class="MobileAppProject.Shop"
+             BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
 
             <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                    <Label Text="Brands" FontSize="Large" 
+                    <Label Text="Brands" 
+                           FontSize="Large" 
                            FontFamily="Bold" 
                            HorizontalOptions="StartAndExpand"
-                           TextColor="DarkGoldenrod"/>
+                           TextColor="Black"/>
 
                     <Image Source="Brands/addidas.png" HeightRequest="130">
                         <Image.GestureRecognizers>
@@ -18,7 +20,11 @@
                                 Tapped="Adidas_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Adidas" Clicked="Adidas_Click" WidthRequest="200" HorizontalOptions="StartAndExpand"/>
+                    <Button Text="Shop Adidas" 
+                            Clicked="Adidas_Click" 
+                            WidthRequest="200" 
+                            HorizontalOptions="StartAndExpand"
+                            BorderRadius="10"/>
 
                     <Label Text="&#x0a;"/>
 
@@ -28,17 +34,30 @@
                                 Tapped="Puma_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop puma" Clicked="Puma_Click" WidthRequest="200" HorizontalOptions="StartAndExpand"/>
-                    
+                    <Button Text="Shop puma" 
+                            Clicked="Puma_Click" 
+                            WidthRequest="200"
+                            HorizontalOptions="StartAndExpand"
+                            BorderRadius="10"/>
+
                     <Label Text="&#x0a;"/>
-                    
+
                     <Image Source="Brands/converse.png" HeightRequest="130">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer
                                 Tapped="Converse_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Converse" Clicked="Converse_Click" WidthRequest="200" HorizontalOptions="StartAndExpand"/>
+                    <Button Text="Shop Converse" 
+                            Clicked="Converse_Click" 
+                            WidthRequest="200" 
+                            HorizontalOptions="StartAndExpand"
+                            BorderRadius="10"/>
+
+                    <Label BackgroundColor="LightGray" 
+                           HeightRequest="1" 
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Center"/>
 
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
@@ -50,7 +69,11 @@
                                 Tapped="Nike_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Nike" Clicked="Nike_Click" WidthRequest="200" HorizontalOptions="End"/>
+                    <Button Text="Shop Nike" 
+                            Clicked="Nike_Click" 
+                            WidthRequest="200" 
+                            HorizontalOptions="End"
+                            BorderRadius="10"/>
 
                     <Label Text="&#x0a;"/>
 
@@ -60,7 +83,11 @@
                                 Tapped="Timberland_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Timberlands" Clicked="Timberland_Click" WidthRequest="200" HorizontalOptions="End"/>
+                    <Button Text="Shop Timberlands" 
+                            Clicked="Timberland_Click" 
+                            WidthRequest="200" 
+                            HorizontalOptions="End"
+                            BorderRadius="10"/>
 
                     <Label Text="&#x0a;"/>
 
@@ -70,13 +97,29 @@
                                 Tapped="Reebok_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Reeboks" Clicked="Reebok_Click" WidthRequest="200" HorizontalOptions="End"/>
+                    <Button Text="Shop Reeboks" 
+                            Clicked="Reebok_Click" 
+                            WidthRequest="200" 
+                            HorizontalOptions="End"
+                            BorderRadius="10"/>
+
+
+                    <Label BackgroundColor="LightGray" 
+                           HeightRequest="1" 
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Center"/>
+                    
+                    <!-- Go back home -->
+                    <Button Clicked="HomePage"
+                    Text="Home"
+                    WidthRequest="70"
+                    BorderRadius="10"
+                    VerticalOptions="End"
+                    HorizontalOptions="Center"/>
                 </StackLayout>
             </StackLayout>
             
-            
 
         </ScrollView>
-       
     </ContentPage.Content>
 </ContentPage>
