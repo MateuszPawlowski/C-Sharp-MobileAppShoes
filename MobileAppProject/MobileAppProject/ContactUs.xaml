@@ -5,6 +5,8 @@
              BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
+            
+            <!--Label and Image of Contacts-->
             <Label  Text="----Contact Us!----"
                     TextColor="Black"
                     BackgroundColor="LightGray"
@@ -16,17 +18,27 @@
                    HeightRequest="200" 
                    HorizontalOptions="CenterAndExpand"/>
 
-            <Entry  Placeholder="Name"/>
-            <Entry  Placeholder="E-mail"/>
+            <!--Fields to enter-->
+            <Entry  Placeholder="Name"
+                    PlaceholderColor="#bababa" />
+            
+            <Entry  Placeholder="E-mail"
+                    PlaceholderColor="#bababa" />
+            
             <Entry  Placeholder="Comments..."
+                    PlaceholderColor="#bababa" 
                     IsSpellCheckEnabled="True"
                     IsTextPredictionEnabled="True"/>
+            
+            <!--Button to contact-->
             <Button Clicked="Contact_Click"
                     Text="Contact"
                     BorderRadius="10"
                     VerticalOptions="StartAndExpand"/>
 
-            <Label HeightRequest="1" BackgroundColor="LightGray"/>
+            <!--Make a line-->
+            <Label HeightRequest="1" 
+                   BackgroundColor="LightGray"/>
             
             <!-- Go back home -->
             <Button Clicked="HomePage"
@@ -38,4 +50,5 @@
 
         </StackLayout>
     </ContentPage.Content>
+    
 </ContentPage>

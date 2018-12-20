@@ -92,6 +92,7 @@
     <Content Include="$(MSBuildThisFileDirectory)OtherPics\aboutUs.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)OtherPics\contact.png" />
     <Content Include="$(MSBuildThisFileDirectory)OtherPics\logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)OtherPics\pay.png" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\airforce.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\calder.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Shop\ShopPics\converseshoe.jpg" />

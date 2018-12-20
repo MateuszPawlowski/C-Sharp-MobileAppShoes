@@ -6,8 +6,9 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-            <!-- Place new controls here -->
-            <Label Text="----Adidas----"
+                
+                <!--Brand Name-->
+                <Label Text="----Adidas----"
                    BackgroundColor="LightGray"
                    TextColor="Black" 
                    FontAttributes="Bold"
@@ -15,21 +16,28 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Start" />
 
-
+                <!--Layout of page-->
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Shoe name, image-->
                         <Label Text="Adidas Gazelle" 
                                TextColor="Black"
                                HorizontalOptions="CenterAndExpand" 
                                FontSize="25"/>
-                        <Image Source="Shop/ShopPics/gazelle.jpg" HeightRequest="150"/>
 
+                        <Image Source="Shop/ShopPics/gazelle.jpg" 
+                               HeightRequest="150"/>
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Line Break-->
                         <Label Text="&#x0a;"/>
-                        <Picker Title="Sizes:" BackgroundColor="LightGray" TextColor="Black">
+
+                        <!--Size Chart-->
+                        <Picker Title="Sizes:" BackgroundColor="Gray" TextColor="Black">
                             <Picker.Items>
                                 <x:String>7</x:String>
                                 <x:String>7.5</x:String>
@@ -39,7 +47,8 @@
                             </Picker.Items>
                         </Picker>
 
-                        <Label Text="Cost: $180" 
+                        <!--Cost and Cart Button-->
+                        <Label Text="Cost: $80" 
                                TextColor="Black"
                                FontSize="30" 
                                FontAttributes="Bold"/>
@@ -53,27 +62,33 @@
                             HeightRequest="40"/>
 
                     </StackLayout>
-
                 </StackLayout>
 
+                <!--Line Break-->
                 <Label Text="&#x0a;"/>
 
+                <!--Layout of page-->
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Shoe name, image-->
                         <Label Text="Adidas NMD R1" 
                                TextColor="Black"
                                HorizontalOptions="CenterAndExpand" 
                                FontSize="25"/>
-                        
+
                         <Image Source="Shop/ShopPics/nmd.jpg" 
                                HeightRequest="150"/>
-
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Line Break-->
                         <Label Text="&#x0a;"/>
-                        <Picker Title="Sizes:" BackgroundColor="LightGray" TextColor="Black">
+
+                        <!--Size Chart-->
+                        <Picker Title="Sizes:" BackgroundColor="Gray" TextColor="Black">
                             <Picker.Items>
                                 <x:String>7</x:String>
                                 <x:String>7.5</x:String>
@@ -81,15 +96,14 @@
                                 <x:String>8.5</x:String>
                                 <x:String>9</x:String>
                             </Picker.Items>
-
-
                         </Picker>
 
+                        <!--Cost and Cart Button-->
                         <Label Text="Cost: $180" 
                                TextColor="Black"
                                FontSize="30" 
                                FontAttributes="Bold"/>
-                        
+
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             HorizontalOptions="Start"
@@ -98,29 +112,31 @@
                             WidthRequest="150"
                             HeightRequest="40"/>
 
-
-
                     </StackLayout>
-
                 </StackLayout>
 
                 <Label Text="&#x0a;"/>
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Shoe name, image-->
                         <Label Text="Adidas Yeezy 350" 
                                TextColor="Black"
                                HorizontalOptions="CenterAndExpand" 
                                FontSize="25"/>
-                        <Image Source="Shop/ShopPics/yeezy.jpg" HeightRequest="150"/>
 
+                        <Image Source="Shop/ShopPics/yeezy.jpg" 
+                               HeightRequest="150"/>
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Line Break-->
                         <Label Text="&#x0a;"/>
-                        <Picker Title="Sizes:" 
-                                BackgroundColor="LightGray" 
-                                TextColor="Black">
+
+                        <!--Size Chart-->
+                        <Picker Title="Sizes:" BackgroundColor="Gray" TextColor="Black">
                             <Picker.Items>
                                 <x:String>7</x:String>
                                 <x:String>7.5</x:String>
@@ -128,14 +144,14 @@
                                 <x:String>8.5</x:String>
                                 <x:String>9</x:String>
                             </Picker.Items>
-
-
                         </Picker>
 
+                        <!--Cost and Cart Button-->
                         <Label Text="Cost: $220" 
                                TextColor="Black"
                                FontSize="30" 
                                FontAttributes="Bold"/>
+
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
                             HorizontalOptions="Start"
@@ -144,22 +160,23 @@
                             WidthRequest="150"
                             HeightRequest="40"/>
 
-
-
                     </StackLayout>
-
                 </StackLayout>
-
+                
+                <!--Line Break-->
                 <Label Text="&#x0a;"/>
+                
+                <!--Button to Buy-->
                 <Button Text="Buy" 
                         Clicked="Bought" 
                         HorizontalOptions="Center" 
-                        WidthRequest="150"
-                        />
+                        WidthRequest="150"/>
 
-                <Label HeightRequest="1" BackgroundColor="LightGray"/>
+                <!--Makes a line-->
+                <Label HeightRequest="1" 
+                       BackgroundColor="LightGray"/>
                 
-                <!-- Go back home -->
+                <!--Go back home-->
                 <Button Clicked="BackPage"
                     Text="Back"
                     WidthRequest="70"
@@ -170,4 +187,5 @@
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

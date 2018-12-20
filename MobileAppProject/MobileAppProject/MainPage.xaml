@@ -5,60 +5,70 @@
              BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <!-- Place new controls here -->
-            <Label Text="Black and White"
-               FontAttributes="Bold"
-               FontSize="40"
-               TextColor="Black"
-               HorizontalOptions="Center"
-               VerticalOptions="Start" />
+            <StackLayout>
 
-            <Label Text="&#x0a;"/>
+                <!--Label + Image-->
+                <Label Text="Black and White"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start" />   
 
-            <Image Source="OtherPics/logo.png" HeightRequest="360" VerticalOptions="StartAndExpand"/>
-            
-            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
-                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                    <Button Text="Shop"
-                            Clicked="Shop_Click"
-                            HorizontalOptions="Center"
-                            VerticalOptions="End"
-                            BorderRadius="10"
-                            WidthRequest="200"
-                            HeightRequest="70"/>
+                <Label Text="&#x0a;"/>
 
-                    <Button Text="About Us"
-                            Clicked="AboutUs_Click"
-                            HorizontalOptions="Center"
-                            VerticalOptions="End"
-                            BorderRadius="10"
-                            WidthRequest="200"
-                            HeightRequest="70"/>
-                </StackLayout>
+                <Image Source="OtherPics/logo.png" 
+                       HeightRequest="360" 
+                       VerticalOptions="StartAndExpand"/>
 
-                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                   
-                    <Button Text="Login"
-                            Clicked="Login_Click"
-                            HorizontalOptions="Center"
-                            VerticalOptions="End"
-                            BorderRadius="10"
-                            WidthRequest="200"
-                            HeightRequest="70"/>
+                <!--Layout of page-->
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
 
-                    <Button Text="Contact Us"
-                            Clicked="Contact_Click"
-                            HorizontalOptions="Center"
-                            VerticalOptions="End"
-                            BorderRadius="10"
-                            WidthRequest="200"
-                            HeightRequest="70"/>
+                        <!--Types of buttons used-->
+                        <Button Text="Shop"
+                                Clicked="Shop_Click"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End"
+                                BorderRadius="10"
+                                WidthRequest="200"
+                                HeightRequest="70"/>
+
+                        <Button Text="About Us"
+                                Clicked="AboutUs_Click"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End"
+                                BorderRadius="10"
+                                WidthRequest="200"
+                                HeightRequest="70"/>
+                        
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Types of buttons used-->
+                        <Button Text="Login"
+                                Clicked="Login_Click"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End"
+                                BorderRadius="10"
+                                WidthRequest="200"
+                                HeightRequest="70"/>
+
+                        <Button Text="Contact Us"
+                                Clicked="Contact_Click"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End"
+                                BorderRadius="10"
+                                WidthRequest="200"
+                                HeightRequest="70"/>
+                        
+                    </StackLayout>
+
                 </StackLayout>
 
             </StackLayout>
-
-        </StackLayout>
         </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

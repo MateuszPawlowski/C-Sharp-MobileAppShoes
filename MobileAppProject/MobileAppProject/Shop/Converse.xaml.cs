@@ -17,16 +17,23 @@ namespace MobileAppProject
 			InitializeComponent ();
         }
 
+        // Add to Cart
         private async void AddedCart(object sender, EventArgs e)
         {
             await DisplayAlert("Added To Cart", "Your Cart has been updated", "Ok");
         }
 
-        async void Bought(object sender, EventArgs e)
+        // Bought something
+        private async void Bought(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Payment());
         }
 
+        // Go back a page
+        private async void BackPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Shop());
+        }
 
     }
 }

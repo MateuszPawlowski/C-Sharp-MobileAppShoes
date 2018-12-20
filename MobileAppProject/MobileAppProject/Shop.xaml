@@ -6,109 +6,134 @@
     <ContentPage.Content>
         <ScrollView>
 
+            <!--Layout of page-->
             <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                    <!--Label + Images of brands-->
                     <Label Text="Brands" 
                            FontSize="Large" 
                            FontFamily="Bold" 
                            HorizontalOptions="StartAndExpand"
                            TextColor="Black"/>
 
+                    <!--Tap Image to go to brand-->
                     <Image Source="Brands/addidas.png" HeightRequest="130">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="Adidas_Tap"/>
+                            <TapGestureRecognizer Tapped="Adidas_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
+
+                    <!--Button clicked goes to brand-->
                     <Button Text="Shop Adidas" 
                             Clicked="Adidas_Click" 
                             WidthRequest="200" 
                             HorizontalOptions="StartAndExpand"
                             BorderRadius="10"/>
 
+                    <!--Line Break-->
                     <Label Text="&#x0a;"/>
 
+                    <!--Tap Image to go to brand-->
                     <Image Source="Brands/puma.png" HeightRequest="130">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="Puma_Tap"/>
+                            <TapGestureRecognizer Tapped="Puma_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
+
+                    <!--Button clicked goes to brand-->
                     <Button Text="Shop puma" 
                             Clicked="Puma_Click" 
                             WidthRequest="200"
                             HorizontalOptions="StartAndExpand"
                             BorderRadius="10"/>
 
+                    <!--Line Break-->
                     <Label Text="&#x0a;"/>
 
+                    <!--Tap Image to go to brand-->
                     <Image Source="Brands/converse.png" HeightRequest="130">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="Converse_Tap"/>
+                            <TapGestureRecognizer Tapped="Converse_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
+
+                    <!--Button clicked goes to brand-->
                     <Button Text="Shop Converse" 
                             Clicked="Converse_Click" 
                             WidthRequest="200" 
                             HorizontalOptions="StartAndExpand"
                             BorderRadius="10"/>
 
+                    <!--Makes a line-->
                     <Label BackgroundColor="LightGray" 
                            HeightRequest="1" 
                            HorizontalOptions="FillAndExpand" 
                            VerticalOptions="Center"/>
 
                 </StackLayout>
-                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                    <Label Text=" " FontSize="Large" FontFamily="Bold"/>
 
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                    <!--Label + Images of brands-->
+                    <Label Text=" " 
+                           FontSize="Large" 
+                           FontFamily="Bold"/>
+
+                    <!--Tap Image to go to brand-->
                     <Image Source="Brands/nike.png" HeightRequest="130">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="Nike_Tap"/>
+                            <TapGestureRecognizer Tapped="Nike_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
+
+                    <!--Button clicked goes to brand-->
                     <Button Text="Shop Nike" 
                             Clicked="Nike_Click" 
                             WidthRequest="200" 
                             HorizontalOptions="End"
                             BorderRadius="10"/>
 
+                    <!--Line Break-->
                     <Label Text="&#x0a;"/>
 
+                    <!--Tap Image to go to brand-->
                     <Image Source="Brands/timberland.png" HeightRequest="130">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="Timberland_Tap"/>
+                            <TapGestureRecognizer Tapped="Timberland_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Timberlands" 
+
+                    <!--Button clicked goes to brand-->
+                    <Button Text="Shop Timberland" 
                             Clicked="Timberland_Click" 
                             WidthRequest="200" 
                             HorizontalOptions="End"
                             BorderRadius="10"/>
 
+                    <!--Line Break-->
                     <Label Text="&#x0a;"/>
 
+                    <!--Tap Image to go to brand-->
                     <Image Source="Brands/reebok.png" HeightRequest="130">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="Reebok_Tap"/>
+                            <TapGestureRecognizer Tapped="Reebok_Tap"/>
                         </Image.GestureRecognizers>
                     </Image>
-                    <Button Text="Shop Reeboks" 
+
+                    <!--Button clicked goes to brand-->
+                    <Button Text="Shop Reebok" 
                             Clicked="Reebok_Click" 
                             WidthRequest="200" 
                             HorizontalOptions="End"
                             BorderRadius="10"/>
 
-
+                    <!--Makes a line-->
                     <Label BackgroundColor="LightGray" 
                            HeightRequest="1" 
                            HorizontalOptions="FillAndExpand" 
                            VerticalOptions="Center"/>
-                    
+
                     <!-- Go back home -->
                     <Button Clicked="HomePage"
                     Text="Home"
@@ -116,10 +141,11 @@
                     BorderRadius="10"
                     VerticalOptions="End"
                     HorizontalOptions="Center"/>
+                    
                 </StackLayout>
+                
             </StackLayout>
-            
-
         </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

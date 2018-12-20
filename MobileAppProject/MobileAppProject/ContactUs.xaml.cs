@@ -17,6 +17,7 @@ namespace MobileAppProject
 			InitializeComponent ();
 		}
 
+        // Contact function
         private async void Contact_Click(object sender, EventArgs e)
         {
             await DisplayAlert("Thank you!", "Thank you for contacting, " +
@@ -24,9 +25,11 @@ namespace MobileAppProject
             await Navigation.PushAsync(new MainPage());
         }
 
+        // Go back home
         private async void HomePage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
+
     }
 }

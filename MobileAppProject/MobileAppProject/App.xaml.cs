@@ -11,6 +11,7 @@ namespace MobileAppProject
         {
             InitializeComponent();
 
+            // Navigation through different pages
             MainPage = new NavigationPage(new MainPage());
         }
 

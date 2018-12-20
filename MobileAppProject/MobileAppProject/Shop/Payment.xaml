@@ -4,10 +4,54 @@
              x:Class="MobileAppProject.Payment"
              BackgroundColor="White">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+            <!--Payment label-->
+            <Label  Text="----Payement----"
+                    TextColor="Black"
+                    BackgroundColor="LightGray"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"/>
+
+            <!--Image-->
+            <Image Source="OtherPics/pay.png" 
+                   HeightRequest="200" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <!--Entries for different Info.-->
+            <Entry  Placeholder="Card Number"
+                    PlaceholderColor="#bababa"/>
+            
+            <Entry  Placeholder="Card Holder"
+                    PlaceholderColor="#bababa"/>
+            
+            <Entry  Placeholder="Expiery Date"
+                    PlaceholderColor="#bababa"/>
+
+            <Entry  Placeholder="Security Code"
+                    PlaceholderColor="#bababa"/>
+            
+            <!--Make Payment-->
+            <Button Clicked="Payment_Made"
+                    Text="Pay Now!"
+                    BorderRadius="10"
+                    WidthRequest="300"
+                    VerticalOptions="StartAndExpand"/>
+
+            <!--Line Break-->
+            <Label HeightRequest="1" BackgroundColor="LightGray"/>
+
+            <!-- Go back home -->
+            <Button Clicked="BackPage"
+                    Text="Back"
+                    WidthRequest="70"
+                    BorderRadius="10"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"/>
+
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

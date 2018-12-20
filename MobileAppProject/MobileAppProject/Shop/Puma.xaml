@@ -6,26 +6,38 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <!-- Place new controls here -->
-                <Label Text="----Adidas----"
-               FontAttributes="Bold"
-               FontSize="Large"
-               BackgroundColor="LightPink"
-               HorizontalOptions="Center"
-               VerticalOptions="Start" />
 
+                <!--Brand Name-->
+                <Label Text="----Puma----"
+                   BackgroundColor="LightGray"
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start" />
 
+                <!--Layout of page-->
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Puma SF Future" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/pumasffuture.jpg" HeightRequest="150"/>
 
+                        <!--Shoe name, image-->
+                        <Label Text="Puma SF Future" 
+                               TextColor="Black"
+                               HorizontalOptions="CenterAndExpand" 
+                               FontSize="25"/>
+
+                        <Image Source="Shop/ShopPics/pumasffuture.jpg" 
+                               HeightRequest="150"/>
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Line Break-->
                         <Label Text="&#x0a;"/>
-                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+
+                        <!--Size Chart-->
+                        <Picker Title="Sizes:" BackgroundColor="Gray" TextColor="Black">
                             <Picker.Items>
                                 <x:String>7</x:String>
                                 <x:String>7.5</x:String>
@@ -33,40 +45,50 @@
                                 <x:String>8.5</x:String>
                                 <x:String>9</x:String>
                             </Picker.Items>
-
-
                         </Picker>
 
-                        <Label Text="Cost: $110" FontSize="30" FontAttributes="Bold"/>
+                        <!--Cost and Cart Button-->
+                        <Label Text="Cost: $110" 
+                               TextColor="Black"
+                               FontSize="30" 
+                               FontAttributes="Bold"/>
+
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
-                            BackgroundColor="DimGray"
-                            TextColor="Navy"
                             HorizontalOptions="Start"
                             VerticalOptions="End"
                             BorderRadius="10"
                             WidthRequest="150"
                             HeightRequest="40"/>
 
-
-
                     </StackLayout>
-
                 </StackLayout>
 
+                <!--Line Break-->
                 <Label Text="&#x0a;"/>
 
+                <!--Layout of page-->
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Puma Tsugi" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/pumatsugi.jpg" HeightRequest="150"/>
 
+                        <!--Shoe name, image-->
+                        <Label Text="Puma Tsugi" 
+                               TextColor="Black"
+                               HorizontalOptions="CenterAndExpand" 
+                               FontSize="25"/>
+
+                        <Image Source="Shop/ShopPics/pumatsugi.jpg" 
+                               HeightRequest="150"/>
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Line Break-->
                         <Label Text="&#x0a;"/>
-                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+
+                        <!--Size Chart-->
+                        <Picker Title="Sizes:" BackgroundColor="Gray" TextColor="Black">
                             <Picker.Items>
                                 <x:String>7</x:String>
                                 <x:String>7.5</x:String>
@@ -74,39 +96,47 @@
                                 <x:String>8.5</x:String>
                                 <x:String>9</x:String>
                             </Picker.Items>
-
-
                         </Picker>
 
-                        <Label Text="Cost: $130" FontSize="30" FontAttributes="Bold"/>
+                        <!--Cost and Cart Button-->
+                        <Label Text="Cost: $130" 
+                               TextColor="Black"
+                               FontSize="30" 
+                               FontAttributes="Bold"/>
+
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
-                            BackgroundColor="DimGray"
-                            TextColor="Navy"
                             HorizontalOptions="Start"
                             VerticalOptions="End"
                             BorderRadius="10"
                             WidthRequest="150"
                             HeightRequest="40"/>
 
-
-
                     </StackLayout>
-
                 </StackLayout>
 
                 <Label Text="&#x0a;"/>
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                        <Label Text="Puma x BTS" HorizontalOptions="CenterAndExpand" FontSize="25"/>
-                        <Image Source="Shop/ShopPics/pumaxbts.jpg" HeightRequest="150"/>
 
+                        <!--Shoe name, image-->
+                        <Label Text="Puma x BTS" 
+                               TextColor="Black"
+                               HorizontalOptions="CenterAndExpand" 
+                               FontSize="25"/>
+
+                        <Image Source="Shop/ShopPics/pumaxbts.jpg" 
+                               HeightRequest="150"/>
 
                     </StackLayout>
 
                     <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+
+                        <!--Line Break-->
                         <Label Text="&#x0a;"/>
-                        <Picker Title="Sizes:" BackgroundColor="PaleGoldenrod" TextColor="ForestGreen">
+
+                        <!--Size Chart-->
+                        <Picker Title="Sizes:" BackgroundColor="Gray" TextColor="Black">
                             <Picker.Items>
                                 <x:String>7</x:String>
                                 <x:String>7.5</x:String>
@@ -114,30 +144,48 @@
                                 <x:String>8.5</x:String>
                                 <x:String>9</x:String>
                             </Picker.Items>
-
-
                         </Picker>
 
-                        <Label Text="Cost: $130" FontSize="30" FontAttributes="Bold"/>
+                        <!--Cost and Cart Button-->
+                        <Label Text="Cost: $130" 
+                               TextColor="Black"
+                               FontSize="30" 
+                               FontAttributes="Bold"/>
+
                         <Button Text="Add to cart"
                             Clicked="AddedCart"
-                            BackgroundColor="DimGray"
-                            TextColor="Navy"
                             HorizontalOptions="Start"
                             VerticalOptions="End"
                             BorderRadius="10"
                             WidthRequest="150"
                             HeightRequest="40"/>
 
-
-
                     </StackLayout>
-
                 </StackLayout>
 
+                <!--Line Break-->
                 <Label Text="&#x0a;"/>
-                <Button Text="Buy" Clicked="Bought" HorizontalOptions="Center" WidthRequest="150"/>
+
+                <!--Button to Buy-->
+                <Button Text="Buy" 
+                        Clicked="Bought" 
+                        HorizontalOptions="Center" 
+                        WidthRequest="150"/>
+
+                <!--Makes a line-->
+                <Label HeightRequest="1" 
+                       BackgroundColor="LightGray"/>
+
+                <!--Go back home-->
+                <Button Clicked="BackPage"
+                    Text="Back"
+                    WidthRequest="70"
+                    BorderRadius="10"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
+
 </ContentPage>

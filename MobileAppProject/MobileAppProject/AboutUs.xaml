@@ -6,6 +6,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                
+                <!--Label and Image of About Us-->
                 <Label Text="-----About Us-----"
                        BackgroundColor="LightGray"
                        TextColor="Black"
@@ -14,23 +16,28 @@
                        HorizontalOptions="Center"
                        VerticalOptions="CenterAndExpand" />
                 
-                <Image Source="OtherPics/aboutUs.jpg" VerticalOptions="CenterAndExpand"/>
+                <Image Source="OtherPics/aboutUs.jpg" 
+                       VerticalOptions="CenterAndExpand"/>
                 
+                <!--Text about us-->
                 <Label Text="Black and White is your place for athletic and casual shoes for the whole family from hundreds of name brands. You'll find styles for women, men and kids from brands like Nike, Converse, Timberland, Puma, Adidas, Skechers, Reebok and more! With stores in Ireland and even more selection online at BlackandWhite.com and BlackandWhite.ie, Black and White is a leading family footwear destination for the famous brands you know and love. Black and White is part of Caleres Inc., a diverse portfolio of global footwear brands. Combined, these brands help make Caleres a company with both a legacy and a mission. Caleres' legacy includes more than 130-years of craftsmanship, a passion for fit and a business savvy, with a mission to continue to inspire people to feel good…feet first."
                        VerticalOptions="CenterAndExpand"
                        TextColor="Black"/>
 
-                <Label HeightRequest="1" BackgroundColor="LightGray"/>
+                <!--Make a line-->
+                <Label HeightRequest="1"
+                       BackgroundColor="LightGray"/>
                 
                 <!-- Go back home -->
                 <Button Clicked="HomePage"
-                    Text="Home"
-                    WidthRequest="70"
-                    BorderRadius="10"
-                    VerticalOptions="End"
-                    HorizontalOptions="End"/>
+                        Text="Home"
+                        WidthRequest="70"
+                        BorderRadius="10"
+                        VerticalOptions="End"
+                        HorizontalOptions="End"/>
 
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

@@ -177,6 +177,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\contact.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\pay.png" />
+  </ItemGroup>
   <Import Project="..\MobileAppProject\MobileAppProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
